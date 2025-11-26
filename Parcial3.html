@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parcial 3 - Avanzado</title>
+    <link rel="stylesheet" href="Estilo.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: { 'fondo-01': '#080011', 'neon-01': '#FF00FF', 'brillo-01': '#E0B0FF', 'texto-01': '#F0F0F0' },
+                    fontFamily: { sans: ['Inter', 'sans-serif'] },
+                }
+            }
+        }
+    </script>
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+</head>
+<body class="selection:bg-neon-01 selection:text-fondo-01">
+
+    <div class="max-w-7xl mx-auto p-4 md:p-8">
+        <header class="flex flex-col md:flex-row justify-between items-center py-6 mb-8 border-b border-neon-01/30 sticky top-0 z-20 bg-fondo-01/95 backdrop-blur-sm">
+            <h1 class="titulo-principal texto-neon-1 md:mb-0">Diseño Web</h1>
+            <nav class="flex flex-wrap justify-center gap-4 text-sm md:text-lg">
+                <a href="index.html" class="boton-neon-1">Inicio</a>
+                <a href="Parcial1.html" class="boton-neon-1">Parcial 1</a>
+                <a href="Parcial2.html" class="boton-neon-1">Parcial 2</a>
+                <a href="Parcial3.html" class="boton-neon-1 bg-neon-01 text-fondo-01 font-bold">Parcial 3</a>
+            </nav>
+        </header>
+
+        <section class="space-y-16">
+            <div class="Parcial pt-10"><h3 class="titulo-parcial texto-neon-1">Parcial 3 y Final</h3></div>
+
+   <div class="caja-borde-1 lg:col-span-2">
+         <h2 class="titulo-tema-1">Página hecha por IA</h2>
+         <img src="IMG/PaginaIA.PNG" alt="">
+    </div>
+           <br>
+        <br>
+        <div class="caja-borde-1 lg:col-span-2">
+         <h2 class="titulo-tema-1">Página Editada</h2>
+         <img src="IMG/PaginaYo.PNG" alt="">
+    </div>
+
+     <div class="max-w-4xl mx-auto p-4">
+        <div class="caja-borde-1">
+            <h2 class="titulo-tema-2">Animaciones Básicas en CSS</h2>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 parrafo-tema">
+                
+                <div>
+                    <div class="animacion-caja animacion-rotar">
+                        Rotar
+                    </div>
+                    <h3 class="font-bold text-neon-01">Rotación (`transform: rotate()`)</h3>
+                    <p class="text-sm">Gira un elemento alrededor de su eje central. Puedes especificar los grados de rotación.</p>
+                </div>
+                
+                <div>
+                    <div class="animacion-caja animacion-escalar">
+                        Escalar
+                    </div>
+                    <h3 class="font-bold text-neon-01">Escalado (`transform: scale()`)</h3>
+                    <p class="text-sm">Aumenta o disminuye el tamaño de un elemento. Se usa un factor (ej. `1.2` para un 120%).</p>
+                </div>
+
+                <div>
+                    <div class="animacion-caja animacion-posicion">
+                        Mover
+                    </div>
+                    <h3 class="font-bold text-neon-01">Posición (`transform: translate()`)</h3>
+                    <p class="text-sm">Mueve un elemento de su posición original en el eje X (horizontal), Y (vertical) o ambos.</p>
+                </div>
+
+                <div>
+                    <div class="animacion-caja animacion-color">
+                        Color
+                    </div>
+                    <h3 class="font-bold text-neon-01">Cambio de Color (`background-color`)</h3>
+                    <p class="text-sm">Transiciona suavemente el color de fondo o de texto de un elemento. Se usa la propiedad `transition`.</p>
+                </div>
+
+                <div>
+                    <div class="animacion-caja animacion-opacidad">
+                        Opacidad
+                    </div>
+                    <h3 class="font-bold text-neon-01">Opacidad (`opacity`)</h3>
+                    <p class="text-sm">Controla la transparencia de un elemento. Un valor de `0` es invisible y `1` es completamente opaco.</p>
+                </div>
+
+                
+                <div class="lg:col-span-3 lg:w-1/3 mx-auto mt-4">
+                    <div class="animacion-caja animacion-combinada w-24 h-24 mx-auto text-lg">
+                        ¡TODO!
+                    </div>
+                    <h3 class="font-bold text-neon-01 text-center">Combinación (`transform` y `color`)</h3>
+                    <p class="text-sm text-center">Aplica múltiples transformaciones (Rotar, Escalar) y cambio de color y forma al mismo tiempo.</p>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+      <div class="scrolling-parallax">
+            <h2 class="titulo-tema-1 texto-neon-1">¡Pikachu en Parallax!</h2>
+        </div>
+
+     <div class="parallax">
+            <h3 class="titulo-tema-1 texto-neon-1">Efectos y Filtros Adicionales</h3>
+            <p class="parrafo-tema mb-4">Pasa el cursor sobre el ícono y las imágenes para ver efectos de filter y transform.</p>
+            <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="currentColor" class="bi bi-brush-fill mx-auto" viewBox="0 0 16 16">
+                <path d="M15.825.12a.5.5 0 0 1 .132.584c-1.53 3.43-4.743 8.17-7.095 10.64a6.1 6.1 0 0 1-2.373 1.534c-.018.227-.06.538-.16.868-.201.659-.667 1.479-1.708 1.74a8.1 8.1 0 0 1-3.078.132 4 4 0 0 1-.562-.135 1.4 1.4 0 0 1-.466-.247.7.7 0 0 1-.204-.288.62.62 0 0 1 .004-.443c.095-.245.316-.38.461-.452.394-.197.625-.453.867-.826.095-.144.184-.297.287-.472l.117-.198c.151-.255.326-.54.546-.848.528-.739 1.201-.925 1.746-.896q.19.012.348.048c.062-.172.142-.38.238-.608.261-.619.658-1.419 1.187-2.069 2.176-2.67 6.18-6.206 9.117-8.104a.5.5 0 0 1 .596.04"/>
+            </svg>
+            
+            <img class="filtro1" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTi-5_lGwS3Yte8SPeQsbemyHxfou7pHWVEQ&s" alt="Imagen de ejemplo 1">
+            <img class="filtro2" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTi-5_lGwS3Yte8SPeQsbemyHxfou7pHWVEQ&s" alt="Imagen de ejemplo 2">
+            <img class="filtro3" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTi-5_lGwS3Yte8SPeQsbemyHxfou7pHWVEQ&s" alt="Imagen de ejemplo 3">
+            <img class="filtro4" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTi-5_lGwS3Yte8SPeQsbemyHxfou7pHWVEQ&s" alt="Imagen de ejemplo 4">
+            <img class="filtro5" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRTi-5_lGwS3Yte8SPeQsbemyHxfou7pHWVEQ&s" alt="Imagen de ejemplo 5">
+        </div>
+
+    </div>
+
+    <div id="cookie-popup" class="cookie-popup">
+        <div class="cookie-content">
+            <h3 class="texto-neon-1">¿Quieres Galletas?</h3>
+            <p>
+                Este sitio web utiliza cookies para mejorar tu experiencia.
+                Al continuar navegando, aceptas las cookies c:
+            </p>
+            <div class="cookie-buttons">
+                <button id="accept-cookies" class="boton-neon-1">Claro que yes</button>
+                <button id="reject-cookies" class="boton-neon-1">Nu-uh</button>
+            </div>
+        </div>
+    </div>
+        <div class="video-container-neon">
+            <h2 class="titulo-tema-2 text-center">Video de Ejemplo</h2>
+            <!-- El wrapper asegura que el video se adapte a la pantalla -->
+            <div class="video-wrapper mx-auto max-w-2xl"> 
+                <iframe 
+                    src="https://www.youtube.com/embed/TFLwwvD_KlU?si=mVFTPqYxuOXrXaNm" 
+                    title="YouTube video player" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                    referrerpolicy="strict-origin-when-cross-origin" 
+                    allowfullscreen
+                ></iframe>
+            </div>
+        </div>
+
+
+        <div>
+            <h2 class="titulo-tema-1">https://leticiab23.github.io/P-ginawebAura3/</h2>
+        </div>
+
+
+          <footer id="info-final" class="border-t border-neon-01/30 pt-8 mt-20 text-center">
+            <h3 class="text-2xl font-bold mb-4 texto-neon-1">
+                Información del Alumno
+            </h3>
+            <p class="parrafo-footer-1 mb-4">
+                Bitácora espacial :D.
+            </p>
+            
+            <div class="info-alumno-caja">
+                <p class="futer text-neon-01 font-mono tracking-widest text-lg">
+                    Carlos Adrian Montana Espejo
+                </p>
+                <p class="futer text-texto-01/80 text-sm mt-1">
+                    Diseño Web • Grupo B
+                </p>
+            </div>
+
+            <p class="parrafo-footer-2">
+                Diseño inspirado en estética neón púrpura | Última actualización 26/11/2025
+            </p>
+        </footer>
+
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const popup = document.getElementById("cookie-popup");
+            if(popup) {
+                setTimeout(() => popup.style.display = "block", 500);
+                document.getElementById("accept-cookies").addEventListener("click", () => popup.style.display = "none");
+                document.getElementById("reject-cookies").addEventListener("click", () => popup.style.display = "none");
+            }
+            lucide.createIcons();
+        });
+    </script>
+</body>
+</html>
